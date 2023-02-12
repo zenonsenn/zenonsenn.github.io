@@ -1,12 +1,12 @@
 html {
     scrollbar-width: none;
+}
+
+body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-body {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none !important;
