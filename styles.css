@@ -18,32 +18,29 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.anjing {
-    margin-left: 10%;
-    margin-top: 6.9vh !important;
-    padding-top: 4.5vh !important;
+.body-container {
+    min-height: 100vh;
 }
 
-.rusa {
-    margin-top: 22.5vh;
-    margin-bottom: 6%;
-    max-height: 100%;
-    font-size: 2vw;
+.gap-8 {
+    gap: 2rem;
 }
 
-.gambar {
-    max-height: 2.8vw;
-    max-width: 2vw;
-    filter: invert(71%) sepia(37%) saturate(4056%) hue-rotate(340deg) brightness(107%) contrast(96%);
+.gap-16 {
+    gap: 4rem;
 }
 
 .kucing {
     color: #fa982e;
 }
 
-.img-fluid {
+/* .img-fluid {
     width: 69%;
     border-radius: 50%;
+} */
+
+.rounded {
+    clip-path: circle();
 }
 
 .linkie {
@@ -56,7 +53,7 @@ body::-webkit-scrollbar {
 
 a:link {
     text-decoration: none;
-    font-size: 10vw;
+    font-size: 6rem;
     color: #fa982e;
 }
 
@@ -69,4 +66,30 @@ a:hover {
 
 a:visited {
     color: #fa982e;
+}
+
+.header {
+    gap: 4rem;
+}
+
+.footer {
+    font-size: 2rem;
+}
+
+.gambar {
+    max-height: 2rem;
+    max-width: 2rem;
+    filter: invert(71%) sepia(37%) saturate(4056%) hue-rotate(340deg) brightness(107%) contrast(96%);
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        gap: 2rem;
+    }
+
+    a:link {
+        text-decoration: none;
+        font-size: 3rem;
+        color: #fa982e;
+    }
 }
