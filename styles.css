@@ -1,16 +1,21 @@
-body {
-    -ms-overflow-style: none;
+html {
     scrollbar-width: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none !important;
     font-family: Archivo, sans-serif;
     background-color: #485f86;
 }
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-.side-img {
-    max-width: 100%;
 }
 
 .anjing {
