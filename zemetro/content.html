@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zemetro Modpack</title>
+        <link href="output.css" rel="stylesheet" />
+        <script src="scripts.js"></script>
+    </head>
+    <body class="bg-[#36393e] text-[#dddddd] overflow-x-hidden">
+        <!-- <div class="h-screen bg-red-800">prologue</div> -->
+        <!-- MINIMUM SCREEN WIDTH 1200PX-->
+        <!-- MINIMUM SCREEN HEIGHT 800PX-->
+
+        <!-- SIDEBAR -->
+        <div class="w-[12vw] ml-[8vw] my-20 fixed">
+            <ul>
+                <li class="mb-[1.25rem] text-3xl leading-8 hover:font-bold hover:cursor-pointer"><a href="#it1">Introduction</a></li>
+                <li class="mb-[1.25rem] text-3xl leading-8 hover:font-bold hover:cursor-pointer"><a href="#it2">Installation</a></li>
+                <li class="mb-[1.25rem] text-3xl leading-8 hover:font-bold hover:cursor-pointer"><a href="#it3">List of Mods</a></li>
+                <li class="mb-[1.25rem] text-3xl leading-8 hover:font-bold hover:cursor-pointer"><a href="#it4">Highlights</a></li>
+                <li class="mb-[1.25rem] text-3xl leading-8 hover:font-bold hover:cursor-pointer"><a href="#it5">Bug Warning</a></li>
+                <li class="text-3xl leading-8 hover:font-bold hover:cursor-pointer"><a href="#it6">External Resources</a></li>
+            </ul>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="flex flex-col text-2xl w-screen pl-[24vw] pr-[12vw] pt-0 pb-20">
+            <!-- <div class="w-[25vw] mr-[2vw]" 25vw=""></div> -->
+
+            <!-- INTRODUCTION -->
+            <div id="it1" class="pt-20">
+                <h1 class="font-bold text-5xl">Introduction</h1>
+                <br />
+                <p class="text-justify">
+                    A private Minecraft Forge Modpack, by
+                    <a class="underline hover:cursor-pointer" onclick="window.open('https://twitter.com/Varyxc')">Vendyll “Varg” Allister</a>, containing 171 mods
+                    centred around Exploration & Dungeons, New Biomes, Decoration, Tech, Create, Magic, Food & Crops, Tinkers' Construct, Backpacks, and various smaller
+                    ones. Done with optimisation in mind and only needing 5 GB of RAM, even PCs with integrated graphics can play! <br /><br />Website and icon of the
+                    modpack are done by <a class="underline hover:cursor-pointer" onclick="window.open('https://zenonsenn.github.io')">Zen</a>.
+                </p>
+
+                <!-- format for monospace <div class="font-mono text-xl ml-8 px-4 py-2 border-solid border-2 border-[#dddddd]">adoptiumInstallerwin64.exe</div> -->
+            </div>
+
+            <!-- INSTALLATION -->
+            <div id="it2" class="pt-20">
+                <h1 class="font-bold text-5xl">Installation</h1>
+                <br />
+                <p class="text-justify">Let's get to installing the modpack shall we?<br /><br /></p>
+                <div class="flex flex-col text-justify">
+                    <div id="step-1" class="first:pt-0 pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold">1</div>
+                                <button
+                                    onclick="window.location.href='#step-2'"
+                                    class="border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    Next
+                                </button>
+                            </div>
+                            <div>
+                                <p>First, you need to download and install Eclipse Adoptium JDK found in this link here:</p>
+                                <p class="pb-3">
+                                    <a
+                                        onclick="window.open('https://adoptium.net/')"
+                                        class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                        >https://adoptium.net/</a
+                                    >
+                                    (Don't worry, folks! Clicking on all links opens a new tab.)
+                                </p>
+                                <img src="img/adoptiumdlpage.png" class="rounded-3xl" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-2" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">2</div>
+                                <div class="flex flex-row">
+                                    <button
+                                        onclick="window.location.href='#it4'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Previous
+                                    </button>
+                                    <button
+                                        onclick="window.location.href='#step-2a'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Then, for the Minecraft Launcher, we will be using Prism Launcher:</p>
+                                <p class="pb-3">
+                                    <a
+                                        onclick="window.open('https://prismlauncher.org/download/')"
+                                        class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                        >https://prismlauncher.org/download/</a
+                                    >
+                                </p>
+                                <img src="img/prismlandingpage.png" class="rounded-3xl" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-2a" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">2a</div>
+                                <div class="flex flex-row">
+                                    <button
+                                        onclick="window.location.href='#step-2'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Previous
+                                    </button>
+                                    <button
+                                        onclick="window.location.href='#step-2b'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="pb-3">
+                                    <span class="font-mono">Installer.exe</span> will install the Launcher automatically. (When the Launcher needs to be updated, you can
+                                    download a new version of the installer and install it.)
+                                </p>
+                                <img src="img/prismlaunchersetup.png" class="rounded-3xl" />
+                                <p class="pt-3">Go through the necessary steps in the installer and launch the game.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-2b" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">2b</div>
+                                <div class="flex flex-row">
+                                    <button
+                                        onclick="window.location.href='#step-2a'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Previous
+                                    </button>
+                                    <button
+                                        onclick="window.location.href='#step-3-4a'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="pb-3">
+                                    <span class="font-mono">Portable.exe</span> allows you to unzip the entire Launcher into any folder but updating the launcher will be
+                                    hard.<br />
+                                    (This would require migrating necessary files from the old version to the new one.)
+                                </p>
+                                <img src="img/prism7zip.png" class="rounded-3xl" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-3-4a" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-tl-3xl rounded-tr-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">3</div>
+                            </div>
+                            <div>
+                                <p class="">Once you launch the Prism Launcher, select the Language, click Next.</p>
+                            </div>
+                        </div>
+                        <div id="step-4a" class="">
+                            <div class="border-2 border-t-0 border-solid border-[#dddddd] rounded-bl-3xl rounded-br-3xl p-4">
+                                <div class="flex justify-between pb-3">
+                                    <div class="text-5xl font-bold pb-3">4a</div>
+                                    <div class="flex flex-row">
+                                        <button
+                                            onclick="window.location.href='#step-2b'"
+                                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                        >
+                                            Previous
+                                        </button>
+                                        <button
+                                            onclick="window.location.href='#step-4b-5a'"
+                                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                        >
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="pb-3">
+                                        Assuming you already installed Eclipse Adoptium JDK in 1, select the latest Java 17 version (mine is 17.0.5). Either the pathway
+                                        or “javaw” works as long as the correct version is selected.
+                                    </p>
+                                    <img src="img/prismquicksetup.png" class="rounded-3xl" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-4b-5a" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-tl-3xl rounded-tr-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">4b</div>
+                            </div>
+                            <div>
+                                <p class="">
+                                    Then for Memory allocation, make sure to put 5120 MiB for both (this is important). You may input higher or lower as you like as this
+                                    is just default allocation for all instances. Click Finish.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="step-5a" class="">
+                            <div class="border-2 border-t-0 border-solid border-[#dddddd] rounded-bl-3xl rounded-br-3xl p-4">
+                                <div class="flex justify-between pb-3">
+                                    <div class="text-5xl font-bold pb-3">5a</div>
+                                    <div class="flex flex-row">
+                                        <button
+                                            onclick="window.location.href='#step-3-4a'"
+                                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                        >
+                                            Previous
+                                        </button>
+                                        <button
+                                            onclick="window.location.href='#step-5b'"
+                                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                        >
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="pb-3">Next, click Settings:</p>
+                                    <img src="img/prismsettingshighlighted.png" class="rounded-3xl" />
+                                    <p class="py-3">(You may change the Theme and Cat to your liking)</p>
+                                    <img src="img/prismsettings.png" class="rounded-3xl" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-5b" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">5b</div>
+                                <div class="flex flex-row">
+                                    <button
+                                        onclick="window.location.href='#step-4b-5a'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Previous
+                                    </button>
+                                    <button
+                                        onclick="window.location.href='#step-5c'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="pb-3">Select Java¹, then in JVM arguments², select, copy, then paste the following text to the JVM arguments textbox:</p>
+                                <div class="font-mono mb-3 p-3 bg-[#111111]">
+                                    <p class="text-left">
+                                        -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC
+                                        -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20
+                                        -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90
+                                        -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1
+                                        -Dusing.aikars.flags=https://mcflags.emc.gs/ -Daikars.new.flags=true
+                                    </p>
+                                </div>
+                                <img src="img/prismjvmargs.png" class="rounded-3xl" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-5c" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">5c</div>
+                                <div class="flex flex-row">
+                                    <button
+                                        onclick="window.location.href='#step-5b'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Previous
+                                    </button>
+                                    <button
+                                        onclick="window.location.href='#step-5c2'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="pb-3">
+                                    Select Accounts¹, Add Microsoft² (or Mojang for legacy), then either copy link³ᵃ and code³ᵃ, OR open page and copy code³ᵇ. Then login
+                                    your Microsoft account linked to your Minecraft account.
+                                </p>
+                                <img src="img/prismaddmsacc.png" class="rounded-3xl" />
+                                <!-- break -->
+                                <div id="step-5c2" class="flex flex-col pt-20">
+                                    <div class="flex flex-row justify-between">
+                                        <p class="py-3">Then your account should show up like this.</p>
+                                        <button
+                                            onclick="window.location.href='#step-6a-6b'"
+                                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                        >
+                                            Continue
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <div class="pt-3">
+                                            <img src="img/prismaccounts.png" class="rounded-3xl" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-6a-6b" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-tl-3xl rounded-tr-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">6a</div>
+                            </div>
+                            <div>
+                                <p class="">
+                                    Download
+                                    <a
+                                        class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                        onclick="window.open('https://drive.google.com/file/d/1i0iIGQL6Ft8jWH_H5fT9eiedAOdDx4MQ/view?usp=sharing')"
+                                        ><span class="font-mono">zemetro.zip</span></a
+                                    >
+                                    and remember the download location.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="step-6b" class="">
+                            <div class="border-2 border-t-0 border-solid border-[#dddddd] rounded-bl-3xl rounded-br-3xl p-4">
+                                <div class="flex justify-between pb-3">
+                                    <div class="text-5xl font-bold pb-3">6b</div>
+                                    <div class="flex flex-row">
+                                        <button
+                                            onclick="window.location.href='#step-5c'"
+                                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                        >
+                                            Previous
+                                        </button>
+                                        <button
+                                            onclick="window.location.href='#step-7'"
+                                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                        >
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="pb-3">
+                                        Close Settings then Add Instance¹, Import from Zip², and click on Browse³. Find zemetro.zip and open it. (You may assign the
+                                        modpack to a Group of any name like “Forge” or rename the modpack to anything else)
+                                    </p>
+                                    <img src="img/prismnewinstance.png" class="rounded-3xl" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-7" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">7</div>
+                                <div class="flex flex-row">
+                                    <button
+                                        onclick="window.location.href='#step-6a-6b'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Previous
+                                    </button>
+                                    <button
+                                        onclick="window.location.href='#step-8'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="pb-3">
+                                    And you are done! Just double click the instance or click “Launch” and the modpack will launch automatically with all settings
+                                    configured. Mods and resource packs will automatically be downloaded for first time launch. If there's a new update, the modpack will
+                                    automatically update without your input whenever you launch the instance.
+                                </p>
+                                <img src="img/prismzemetro.png" class="rounded-3xl" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step-8" class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div class="flex justify-between pb-3">
+                                <div class="text-5xl font-bold pb-3">8</div>
+                                <div class="flex flex-row">
+                                    <button
+                                        onclick="window.location.href='#step-7'"
+                                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Previous
+                                    </button>
+                                    <button
+                                        data-drawer-show="hooray"
+                                        onclick="showAch()"
+                                        class="flex items-center ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                                    >
+                                        Hooray!
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden">
+                                <p class="">
+                                    After launching, some of the settings and some keybinds have been set but you may change them as you desire.<br /><br />Enjoy!
+                                </p>
+                                <div
+                                    id="hooray"
+                                    class="absolute z-40 top-20 right-0 flex items-center bg-[#dddddd] text-[#36393e] rounded-2xl p-3 text-right transition-transform -translate-y-2 translate-x-full"
+                                    tabindex="-1"
+                                >
+                                    Congratulations! You've successfully finished the installation!
+                                </div>
+                            </div>
+                            <!-- -translate-x-20 to show; translate-x-full to close -->
+                        </div>
+                    </div>
+
+                    <div class="pt-20">
+                        <div class="border-2 border-solid border-[#dddddd] rounded-3xl p-4">
+                            <div>
+                                <div class="text-5xl font-bold pb-3">Footnote</div>
+                                <p class="">
+                                    ATLauncher, MultiMC, and Poly Launcher MAY work but are untested.<br />
+                                    Tlauncher, Curseforge Launcher, and Default Minecraft Launcher are unsupported.<br /><br />
+
+                                    If you still wish to use any of those, you would still have to use Prism/Poly/MultiMC/ATLauncher to get the contents then transfer
+                                    the necessary Mods, Config, Resource Pack, and Settings over to your desired launcher and do it again every time there's an update.
+                                    TLauncher is completely unsupported in any circumstance as this is an online-only server.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE MOD LIST -->
+            <div id="it3" class="pt-20">
+                <h1 class="font-bold text-5xl">List of Mods</h1>
+                <br />
+                <div class="flex flex-row max-h-[700px] justify-between">
+                    <div class="w-[14vw]">
+                        <ul class="flex flex-col justify-between h-[700px]">
+                            <li id="mod-list-btn-1" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(1); stayinAlive(1)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a> Dungeons & Exploration </a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-2" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(2); stayinAlive(2)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Biomes</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-3" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(3); stayinAlive(3)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Food & Crops</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-4" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(4); stayinAlive(4)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Decoration</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-5" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(5); stayinAlive(5)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Tech</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-6" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(6); stayinAlive(6)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Magic</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-7" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(7); stayinAlive(7)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Storage</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-8" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(8); stayinAlive(8)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a> Quality of Life </a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-9" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(9); stayinAlive(9)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Miscellaneous</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-10" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(10); stayinAlive(10)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>UI</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-11" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(11); stayinAlive(11)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Graphical¹</a>
+                                </button>
+                            </li>
+                            <li id="mod-list-btn-12" class="leading-7">
+                                <button
+                                    data-active="false"
+                                    onclick="subitAtClick(12); stayinAlive(12)"
+                                    class="hover:cursor-pointer w-[12vw] border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] data-[active=true]:bg-[#dddddd] data-[active=true]:text-[#36393e] ease-in-out transition duration-400"
+                                >
+                                    <a>Optimisation¹</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-row h-[700px]">
+                            <div id="showContent" class="w-[50vw] border-2 border-solid border-[#dddddd] rounded-tl-2xl rounded-tr-2xl leading-[2.25rem] px-4 py-4">
+                                Click the categories on the left!
+                            </div>
+                            <!-- <div id="showDesc" class="w-[25vw] border-2 border-l-0 border-solid border-[#dddddd] leading-[2.25rem] rounded-tr-2xl px-4 py-4">
+                                Click the corresponding mod to read its description!
+                            </div> -->
+                        </div>
+                        <div class="w-[50vw] border-2 border-t-0 border-solid border-[#dddddd] px-4 py-4 rounded-bl-2xl rounded-br-2xl">
+                            <p class="text-justify">
+                                ¹If you wish to use shaders, install Oculus<br />
+                                You may procure the full list of mods by contacting Varg<br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HIGHLIGHTS -->
+            <div id="it4" class="pt-20">
+                <h1 class="font-bold text-5xl">Highlights</h1>
+                <br />
+                <p class="text-justify pb-3">
+                    In order to give the player a sense of direction and a way to know what they can do in this modpack, I've highlighted the more prominent mods and
+                    given a little explanation to each one of them. You can click on the title of the mod to go to the modpage to get a better description or images of
+                    it.
+                </p>
+
+                <!-- collapsible buttons here -->
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">Dungeons & Exploration</div>
+                        <button
+                            id="toggle-1"
+                            onclick="show(1)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                        >
+                            Expand
+                        </button>
+                    </div>
+
+                    <div hidden="true" id="content-1" class="h-[65vh] text-justify mt-3 pr-3 overflow-scroll overflow-x-hidden">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/lootr')"
+                                >Lootr</a
+                            >
+                        </p>
+                        <p class="pt-3">
+                            Lootr is a mod where every player gets their own unique loot from the same chest (ie. Instanced Loot). <br /><br />
+                            Unopened chests will have yellow edges.
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight1.png" />
+                        <p class="py-3">
+                            Opened chests will have blue edges and a gem attached to the top. This is player specific so anyone else looking at the same chest that they
+                            did not touch will be yellow like the above.
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight2.png" />
+                        <p class="pt-3">Below are screenshots of two separate players opening the same Lootr chest. Each having their own different loot.</p>
+                        <br /><br />
+                        <p class="pb-3">Player A:</p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight3.png" />
+                        <p class="py-3">Player B:</p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight4.png" />
+                        <br /><br />
+
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise')"
+                                >When Dungeons Arise</a
+                            >
+                        </p>
+                        <p class="py-3">Various dungeons will pop up in the landscape for you to conquer. Some are easier. Others, will be the fight of your life.</p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight5.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight6.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight7.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight8.png" />
+                        <br /><br />
+
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/endremastered')"
+                                >End Remastered</a
+                            >
+                        </p>
+                        <p class="pt-3"></p>
+                        <p>
+                            The End is Near. The way to get to the End is now overhauled whereby you have to collect different types of ender pearls scattered throughout
+                            the world.
+                        </p>
+                        <img class="rounded-3xl" src="img/highlight/highlight9.png" />
+                        <br /><br />
+
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft')"
+                                >Immersive Aircraft</a
+                            >
+                        </p>
+                        <p class="py-3">
+                            Immersive Aircraft add different aircraft that you can make and fly in to aid with your exploration.<br /><br />
+
+                            Take for example the gyrodyne below. It can seat another player too.
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight10.png" />
+                        <p class="py-3">
+                            Keybinds are found below. “r” to dismount. Rebind as you wish.<br />
+                            (You can go to the Key Binds menu and select “Category” and type in “Aircraft” to filter out that category. You can also do this for keys.)
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight11.png" />
+                    </div>
+                </div>
+
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">Biomes</div>
+                        <button
+                            id="toggle-2"
+                            onclick="show(2)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                        >
+                            Expand
+                        </button>
+                    </div>
+                    <div hidden="true" id="content-2" class="h-[65vh] text-justify mt-3 pr-3 overflow-scroll overflow-x-hidden">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty')"
+                                >Biomes O'Plenty</a
+                            >
+                        </p>
+                        <p class="py-3">
+                            Most people should know this. Adds a whole range of biomes. In addition to BOP, there are other smaller biome mods that are mixed into this.
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight12.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight13.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight14.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight15.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight16.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight17.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight18.png" />
+                    </div>
+                </div>
+
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">Food & Crops</div>
+                        <button
+                            id="toggle-3"
+                            onclick="show(3)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-400"
+                        >
+                            Expand
+                        </button>
+                    </div>
+                    <div hidden="true" id="content-3" class="h-[65vh] text-justify mt-3 pr-3 overflow-scroll overflow-x-hidden">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/farmers-delight')"
+                                >Farmer's Delight</a
+                            >
+                        </p>
+                        <p class="py-3">
+                            A food mod with new crops and better quality food. Eating better food means better effects so try them out and see it for yourself! Some
+                            foods can be placed down like in the image.
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight19.png" />
+                        <br /><br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft')"
+                                >Pam's Harvestcraft</a
+                            >
+                        </p>
+                        <p class="py-3">
+                            Pam's Harvestcraft has much more food variety but does not have the same quality as Farmer's Delight. It has a huge range of crops and food
+                            alike but due to the sheer amount, I'll only screenshot the item page of the mod below.
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight20.png" />
+                    </div>
+                </div>
+
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">Decoration</div>
+                        <button
+                            id="toggle-4"
+                            onclick="show(4)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-200"
+                        >
+                            Expand
+                        </button>
+                    </div>
+                    <div hidden="true" id="content-4" class="text-justify mt-3 pr-3">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/architects-palette')"
+                                >Architec's Palette
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            Just like what the mod name suggests, Architect's Palette adds a palette of blocks designed to complement and shape your builds. Best to
+                            check the modpage for the better description and images.
+                        </p>
+                        <br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/members/sketch_macaw/projects')"
+                                >Macaw's Various Mods
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            sketch_makaw has various mods that relate to building. It is best to check out the projects page for the individual mods. (The only mods
+                            excluded from that projects list are any related to “TFC”.)<br />
+                            Of interest is Macaw's Bridges, Roofs, & Furniture.
+                        </p>
+                        <br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod')"
+                                >MrCrayfish's Furniture Mods
+                            </a>
+                        </p>
+                        <p class="pt-3">Adds furniture that is both functional and beautiful. Look to the modpage for description and images.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">Tech</div>
+                        <button
+                            id="toggle-5"
+                            onclick="show(5)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-200"
+                        >
+                            Expand
+                        </button>
+                    </div>
+                    <div hidden="true" id="content-5" class="h-[65vh] text-justify mt-3 pr-3 overflow-scroll overflow-x-hidden">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/tinkers-construct')"
+                                >Tinkers' Construct
+                            </a>
+                        </p>
+                        <p class="py-3">You can create your own custom tools from materials and alloys. Mod comes with book guides.</p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight21.png" />
+                        <br /><br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/create')"
+                                >Create
+                            </a>
+                        </p>
+                        <p class="py-3">
+                            <a
+                                class="text-2xl font-bold bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.youtube.com/watch?v=rR8W-f9YhYA')"
+                                >When you see it, you'll know.
+                            </a>
+                            &nbsp;(video link)
+                        </p>
+                        <p class="pt-3">
+                            Has an in-game tutorial demonstration for most items and blocks. Check it out by hovering your mouse over a Create item/block and holding “w”
+                            until the demo pops out.
+                        </p>
+                        <br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/mekanism')"
+                                >Mekanism
+                            </a>
+                        </p>
+                        <p class="py-3">Jesse, we need to cook ores.</p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight22.png" />
+                        <p class="pb-3">
+                            Source:
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                href="https://twitter.com/adidaskote"
+                                onclick="window.open('https://twitter.com/adidaskote')"
+                                >@adidaskote</a
+                            >
+                            and @akanehozuki8585
+                        </p>
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/thermal-foundation')"
+                                >Thermal Foundation
+                            </a>
+                        </p>
+                        <p class="pt-3">The thermal series mods are focused around processing materials and automation. Best to check an external resource for it.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">Magic</div>
+                        <button
+                            id="toggle-6"
+                            onclick="show(6)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-200"
+                        >
+                            Expand
+                        </button>
+                    </div>
+                    <div hidden="true" id="content-6" class="h-[65vh] text-justify mt-3 pr-3 overflow-scroll overflow-x-hidden">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/corail-tombstone')"
+                                >Corail Tombstone
+                            </a>
+                        </p>
+                        <p class="py-3">When you die, you spawn a tombstone that will keep your items. Mod offers a lot more than you would expect.</p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight23.png" />
+                        <br /><br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/forbidden-arcanus')"
+                                >Forbidden & Arcanus
+                            </a>
+                        </p>
+
+                        <p class="pt-3">
+                            I honestly don't know much about this mod other than it being magic, lol. You can check the modpage out or go through it in-game.
+                        </p>
+                        <br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/primal-magick')"
+                                >Primal Magick
+                            </a>
+                        </p>
+                        <p class="pt-3">I don't know this either other than magic, go check the link out too.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">Storage</div>
+                        <button
+                            id="toggle-7"
+                            onclick="show(7)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-200"
+                        >
+                            Expand
+                        </button>
+                    </div>
+                    <div hidden="true" id="content-7" class="h-[65vh] text-justify mt-3 pr-3 overflow-scroll overflow-x-hidden">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://appliedenergistics.github.io/')"
+                                >Applied Energistics 2
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            A late-game tech-based storage mod where you can yeet items into Google servers. You may want to start with finding this meteor crash
+                            scattered throughout the world. Documentation can be found in the link.
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight24.png" />
+                        <br /><br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/functional-storage')"
+                                >Functional Storage
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            A modern remake of
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/storage-drawers')"
+                                >Storage Drawers</a
+                            >
+                            and functions in mostly the exact same way. In this mod, you can store single-typed items into a drawer like below. There are different types
+                            of drawers and they can be made out of different wood materials as shown. Along with upgrades that increase capacity or give a function.
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight25.png" />
+                        <br /><br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks')"
+                                >Sophisticated Backpack
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            This backpack mod has upgradeable tiers, from basic and iron all the way to Netherite giving the most inventory space. This along with a slew
+                            of functional and useful upgrades. Not to mention it works both from the chest slot and inside your inventory through keybinds.
+                            <i>Do note that both backpack mods use the “b” keybind.</i>
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight26.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight27.png" />
+                        <br /><br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/travelers-backpack')"
+                                >Traveller's Backpack
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            A simpler version of Sophisticated Backpack with essential accessories such as storing specifically tools and being able to swap them from
+                            the main hand with a keybind. The backpack can be upgraded into a cosmetic model like the wolf backpack below. However, there are some that
+                            give effects like the bee backpack. With the bee backpack, your attacks will cause poison to enemies.
+                            <i>Do note that both backpack mods use the “b” keybind.</i>
+                        </p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight28.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight29.png" />
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight30.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                <div class="flex items-center flex-row justify-between">
+                    <div class="text-3xl font-bold">Quality of Life</div>
+                    <button
+                        id="toggle-8"
+                        onclick="show(8)"
+                        class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-200"
+                    >
+                        Expand
+                    </button>
+                </div>
+                <div hidden="true" id="content-8" class="h-[65vh] text-justify mt-3 pr-3 overflow-scroll overflow-x-hidden">
+                    <p class="text-2xl font-bold">
+                        <a
+                            class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                            onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/corail-woodcutter')"
+                            >Corail Woodcutter
+                        </a>
+                    </p>
+                    <p class="pt-3">Woodcutter just like the stonecutter.</p>
+                    <img class="rounded-3xl py-2" src="img/highlight/highlight31.png" />
+                    <br /><br />
+                    <p class="text-2xl font-bold">
+                        <a
+                            class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                            onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler')"
+                            >Extreme Sound Muffler
+                        </a>
+                    </p>
+                    <p class="pt-3">In-game menu for selectively muffling sounds. Best to check modpage out for full description.</p>
+                    <br />
+                    <p class="text-2xl font-bold">
+                        <a
+                            class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                            onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/screenshot-to-clipboard-fabric')"
+                            >Screenshot to Clipboard
+                        </a>
+                    </p>
+                    <p class="pt-3">
+                        Very simple mod where screenshotting with “F2” also copies the screenshot to your clipboard so you can easily paste it anywhere else.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">UI</div>
+                        <button
+                            id="toggle-9"
+                            onclick="show(9)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-200"
+                        >
+                            Expand
+                        </button>
+                    </div>
+                    <div hidden="true" id="content-9" class="h-[65vh] text-justify mt-3 pr-3 overflow-scroll overflow-x-hidden">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/jei')"
+                                >Just Enough Items (JEI)
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            The most important mod of any modpack in Minecraft is the ability of looking up any item in the game, checking recipes for any items or where
+                            to get them, and checking what the item can be used for. JEI provides all of that functionality and is essential in providing a means for the
+                            player to navigate through a modpack. Thus, it is encouraged to go over to the modpage and learn the controls and features of the mod.
+                        </p>
+                        <br /><br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/light-overlay')"
+                                >Light Overlay
+                            </a>
+                        </p>
+                        <p class="pt-3">By pressing “F7”, gives an overlay on the ground showing whether a mob would spawn on it or not as shown below.</p>
+                        <img class="rounded-3xl py-2" src="img/highlight/highlight32.png" />
+                        <br /><br />
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks')"
+                                >Mouse Tweaks
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            Mouse tweaks add new mechanics for moving items in your inventory. Check out the modpage for the full description and tutorial.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col w-100% border-2 border-[#dddddd] border-solid rounded-3xl p-3 mb-3">
+                    <div class="flex items-center flex-row justify-between">
+                        <div class="text-3xl font-bold">Graphical</div>
+                        <button
+                            id="toggle-10"
+                            onclick="show(10)"
+                            class="ml-3 border-2 border-solid border-[#dddddd] rounded-2xl p-2 text-left hover:bg-[#dddddd] hover:text-[#36393e] ease-in-out transition duration-200"
+                        >
+                            Expand
+                        </button>
+                    </div>
+                    <div hidden="true" id="content-10" class="text-justify mt-3 pr-3">
+                        <p class="text-2xl font-bold">
+                            <a
+                                class="hover:cursor-pointer bg-[#dddddd] text-[#36393e] hover:underline hover:bg-transparent hover:text-[#dddddd] ease-in-out transition duration-100"
+                                onclick="window.open('https://www.curseforge.com/minecraft/texture-packs/unity')"
+                                >Unity Texture Pack
+                            </a>
+                        </p>
+                        <p class="pt-3">
+                            This is the texture pack that this modpack is using. It will be in-game so you'll see it anyways but if you're curious, you can still check
+                            the modpages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUG WARNING -->
+            <div id="it5" class="pt-20">
+                <h1 class="font-bold text-5xl">Bug Warning</h1>
+                <br />
+                <p class="text-justify">
+                    Word of warning that since I alone took my sweet time to make, curate and compile this modpack, I have tried my best to prevent and squash as many
+                    bugs that I can find and fix with some help. Launching this modpack officially is bound to come across new bugs. <br /><br />
+                    For instance, in testing the modpack with
+                    <a class="underline hover:cursor-pointer" onclick="window.open('https://twitter.com/JoyfulTora')">Tora</a>, we came across a (vanilla) bug related to
+                    Treasure Maps whereby the Player opens a chest for the first time containing it, it searches for the relevant structure but that would potentially
+                    cause the server to crash. It's now (maybe) fixed with
+                    <a class="underline hover:cursor-pointer" onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/async-locator')">AsyncLocator</a>.
+                    <br />
+                    Hence, going forward, I encourage all Players to look out passively for bugs. If you come across one, and you can reproduce it, report it to Varg. If
+                    you crash, send the crash report to me. Using Oculus (shaders) is also buggy in some ways so use it at your own risk. I will still try to help with
+                    it.
+                </p>
+                <br />
+            </div>
+
+            <!-- EXTERNAL RESOURCES -->
+            <div id="it6" class="pt-20">
+                <h1 class="font-bold text-5xl">External Resources</h1>
+                <br />
+                <p class="text-justify">
+                    Stuff that are complicated like Mekanism should be given a tutorial series AE2, etc. etc.<br />
+                    <br />
+                    Basically, as much as the ideal world would be to have a quest + guide book to lead all players in a familiar direction or as a tutorial, it is
+                    extremely, extremely time consuming and therefore will not be done. Instead, players are encouraged to look into mods on their own, as well as
+                    checking any tutorials and what not with the above as a basis on where to look for (eg. Create Train Tutorial).<br />
+                    <br />
+                    The modpack should not be rushed as fast as possible as currently the server is rented for at least a month until either interests die down or Tora
+                    or anyone else runs out of money. Hence, players should and are encouraged to take as much time as they would want with their own pacing. There is no
+                    rush to “speedrun” to endgame.<br />
+                </p>
+            </div>
+
+            <!-- THANK YOU NOTE -->
+            <div id="it6" class="pt-20">
+                <h1 class="font-bold text-5xl">If you came this far reading everything, congratulations!</h1>
+                <br />
+                <p class="text-justify">
+                    This website was originally done as a “simple” tutorial on how to install the modpack as well as listing out the features of the modpack. The
+                    entirety of this page is built with blood, bones, and tears of both Zen and Varg. Every word, every section, every detail was deliberate.<br />
+                    <br />
+                    We thank you for reading any word written here. Even if you came here to just yoink the modpack and immediately leave, that is fine. This was our fun
+                    little project for but a few days. We are proud to present this to anyone touching this link. <br /><br /><br />
+                </p>
+                <p class="text-center">Zen and Varg</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="bg-[#111111] h-[16vh] text-[#dddddd] relative flex flex-row w-screen">
+            <div class="absolute">
+                <div class="w-16 h-16 ml-[8vw] mt-[5vh]">
+                    <img src="img/vargsvillefull.png" />
+                </div>
+            </div>
+            <div class="w-screen flex text-xl justify-center py-[7vh]">
+                Made with love with the&nbsp;
+                <a class="hover:cursor-pointer" onclick="window.open('https://twitter.com/rxdazn/status/1626932937777115136?t=FFoavdi7kjsO9ZuibbmMrQ&s=19')">
+                    bus[s]in
+                </a>
+                &nbsp;mind.
+            </div>
+        </div>
+
+        <!-- DO NOT SCROLL FURTHER THIS IF YOU ARE NOT MENTALLY READY -->
+
+        <!-- mod list content; "+" is character used in splitting -->
+        <div id="showSubit" class="overflow-auto scroll-smooth hidden">
+            <p class="text-justify font-bold">Dungeons & Exploration</p>
+            <p id="subit-1" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Comforts')">Comforts<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('End')">End Remastered<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Immersive')">Immersive
+                Aircraft<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Lootr')">Lootr<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Paraglider')">Paraglider Repurposed Structures<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Second')">Second Chance<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Signpost')">Signpost<,/a>+ <,a
+                class="hover:font-bold underline" onclick="showDescAtHover('Lost')">The Lost Castle<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Waystones')">Waystones<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Arise')">When Dungeons
+                Arise!<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Yung')">Yung's Better Mods
+            </p>
+            <br />
+            <p class="text-justify font-bold">Biomes</p>
+            <p id="subit-2" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Atmospheric')">Atmospheric<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Autumnity')">Autumnity<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Plenty')">Biomes O'Plenty<,/a>+
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Ecologics')">Ecologics<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Mushrooms')">Enhanced Mushrooms<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Aquatic')">Upgrade
+                Aquatic
+            </p>
+            <br />
+            <p class="text-justify font-bold">Food & Crops</p>
+            <p id="subit-3" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Cooking')">Cooking For Blockheads<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Foodstuffs')">Create: Foodstuffs & Cafe<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Farmer')">Farmer's Delight<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Incubation')">Incubation<,/a>+
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Harvestcraft')">Pam's Harvestcraft
+            </p>
+            <br />
+            <p class="text-justify font-bold">Decoration</p>
+            <p id="subit-4" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Architect')">Architect's Palette<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Deco')">Create: Deco & Misc/Things<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Decorative')">Decorative Blocks<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('FramedBlocks')">FramedBlocks<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Macaw')">Macaw's Mods<,/a>+
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Furniture')">MrCrayfish's Furniture Mods<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Sweet')">Sweet Concrete
+            </p>
+            <br />
+            <p class="text-justify font-bold">Tech</p>
+            <p id="subit-5" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Create')">Create <,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Hostile')">Hostile Neural Networks<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Mekanism')">Mekanism
+                <,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Grinding')">Mob Grinding Utils<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Thermal')">Thermal Foundation <,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Tinkers')">Tinkers'
+                Construct
+            </p>
+            <br />
+            <p class="text-justify font-bold">Magic</p>
+            <p id="subit-6" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Tombstone')">Corail Tombstone<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Forbidden')">Forbidden & Arcanus<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Magick')">Primal Magick
+            </p>
+            <br />
+            <p class="text-justify font-bold">Storage</p>
+            <p id="subit-7" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Applied')">Applied Energistics 2 <,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Ender')">Ender Storage<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Sophisticated')">Sophisticated
+                Backpacks/Storage<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Storage')">Storage Drawers<,/a>+ <,a class="hover:font-bold
+                underline" onclick="showDescAtHover('Traveller')">Traveller's Backpack
+            </p>
+            <br />
+            <p class="text-justify font-bold">Quality of Life</p>
+            <p id="subit-8" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Woodcutter')">Corail Woodcutter<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Cosmetic')">Cosmetic Armor Reworked<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Ding')">Ding<,/a>+
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Sound')">Extreme Sound Muffler<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('FastLeafDecay')">FastLeafDecay<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('GoProne')">GoProne<,/a>+
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Interoperability')">Interoperability between Mods<,/a>+ <,a class="hover:font-bold
+                underline" onclick="showDescAtHover('Polymorph')">Polymorph<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Quark')">Quark<,/a>+
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Screenshot')">Screenshot to Clipboard<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Supplementaries')">Supplementaries<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('WindowLogging')">WindowLogging<,/a>+ <,i>Many various bugfixes<,i>
+            </p>
+            <br />
+            <p class="text-justify font-bold">Miscellaneous</p>
+            <p id="subit-9" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Easter')">An <,i>Easter<,/i> Egg<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Berry')">Berry Good<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Buzzier')">Buzzier Bees<,/a>+ <,a
+                class="hover:font-bold underline" onclick="showDescAtHover('Beacon')">Beacon Overhaul<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Spark')">Spark Profiler<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Torchmaster')">Torchmaster
+            </p>
+            <br />
+            <p class="text-justify font-bold">UI</p>
+            <p id="subit-10" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('AppleSkin')">AppleSkin<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Controlling')">Controlling<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Just')">Just Enough
+                Items<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Light')">Light Overlay<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Mouse')">Mouse Tweaks<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Neat')">Neat<,/a>+ <,a
+                class="hover:font-bold underline" onclick="showDescAtHover('Hell')">What The Hell Is That?<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Xaero')">Xaero's Minimap & World Map
+            </p>
+            <br />
+            <p class="text-justify font-bold">Graphical</p>
+            <p id="subit-11" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Better')">Better Biome Blend<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Dynamic')">Dynamic Lights Reforged<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Minor')">Minor Texture
+                Adjustments<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Oculus')">Oculus¹<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Unity')">Unity Texture Pack
+            </p>
+            <br />
+            <p class="text-justify font-bold">Optimisation</p>
+            <p id="subit-12" class="text-justify">
+                <,a class="hover:font-bold underline" onclick="showDescAtHover('Alternate')">Alternate Current<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Canary')">Canary<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Clumps')">Clumps<,/a>+ <,a
+                class="hover:font-bold underline" onclick="showDescAtHover('Get')">Get It Together, Drops!<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Pluton')">Pluton<,/a>+ <,a class="hover:font-bold underline" onclick="showDescAtHover('Radon')">Radon<,/a>+ <,a
+                class="hover:font-bold underline" onclick="showDescAtHover('Rubidium')">Rubidium¹<,/a>+ <,a class="hover:font-bold underline"
+                onclick="showDescAtHover('Saturn')">Saturn<,/a>+ And many, many more!
+            </p>
+        </div>
+    </body>
+</html>
