@@ -1,0 +1,35 @@
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: Archivo, sans-serif;
+    background-color: #485f86;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.headline {
+    font-size: 2vw;
+    color: #fa982e;
+}
+
+a:link {
+    text-decoration: none;
+    border-color: #fa982e;
+    border-width: 5px;
+    border-radius: 50px;
+    font-size: 7.5vw;
+    color: #fa982e;
+}
+
+a:hover {
+    background-color: #fa982e;
+    color: #485f86 !important;
+    margin: 0;
+    padding: 0;
+}
+
+a:visited {
+    color: #fa982e;
+}
